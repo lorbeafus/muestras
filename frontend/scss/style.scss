@@ -1,0 +1,10 @@
+@use 'bases/variables';
+@use 'bases/mixins';
+@use 'bases/extends';
+@use 'bases/generales';
+@use 'bases/querys';
+
+@use 'header';
+@use 'main';
+@use 'footer';
+@use 'body';

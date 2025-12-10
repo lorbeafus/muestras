@@ -1,0 +1,53 @@
+// variables
+
+//Colores
+$color-text: #0a0909;
+$color-primary: #cbdf73;
+$color-secondary: #428433;
+$color-tertiary: #4d6842;
+$color-background: #f7f3c9;
+$color-azul: #1c97da;
+
+
+//Tipos de fuente
+$font-primary: 'Nunito', sans-serif;
+
+//Tamaños de fuente
+$font-size-base: 16px;
+$font-size-lg: 24px;
+$font-size-xl: 32px;
+
+//Espaciado
+$spacing-base: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+//Radio de bordes
+$border-radius-base: 4px;
+$border-radius-lg: 8px;
+$border-radius-xl: 12px;
+
+//Ancho de linea
+$line-height-base: 1.5;
+$line-height-lg: 1.8;
+$line-height-xl: 2.2;
+
+//Z-index
+$z-index-base: 1;
+$z-index-secondary: 2;
+$z-index-tertiary: 3;
+
+//Transiciones
+$transition-base: 0.3s ease-in-out;
+$transition-secondary: 0.5s ease-in-out;
+$transition-tertiary: 0.7s ease-in-out;
+
+//Animaciones
+$animation-base: 1s ease-in-out;
+$animation-secondary: 2s ease-in-out;
+$animation-tertiary: 3s ease-in-out;
+
+//Efectos de sombra
+$shadow-base: 0 0 10px rgba(0, 0, 0, 0.1);
+$shadow-secondary: 0 0 20px rgba(0, 0, 0, 0.2);
+$shadow-tertiary: 0 0 30px rgba(0, 0, 0, 0.3);

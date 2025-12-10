@@ -1,0 +1,45 @@
+// ========================================
+// ESTILOS GENERALES - Fauget Fitness
+// ========================================
+
+@use 'variables';
+
+// Reset universal
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+
+// Estilos del body
+body {
+    background-color: $color-background;
+    font-size: $font-size-base;
+    font-family: $font-primary;
+    color: $color-text;
+    line-height: 1.6;
+}
+
+// Clase de fuente Nunito
+.nunito-regular {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Clase para elementos visualmente ocultos pero accesibles
+// (Screen Reader Only - para lectores de pantalla y SEO)
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+

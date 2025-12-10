@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta etiquetas-->
+
+    <!--Enlace iconos font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--Enlace Google Fonts - Nunito-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cinzel:wght@400..900&family=Indie+Flower&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!--enlace CSS-->
+    <link rel="stylesheet" href="./frontend/assets/css/style.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <!--BARRA MENU PRINCIPAL-->
+        <nav class="barra-navegacion">
+            <div class="nav-logo">
+                <a href="./index.html">
+                    <img src="./frontend/assets/img/Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Botón hamburguesa para móvil -->
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+
+            <!--Enlaces del menu principal-->
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav__link">Home</a></li>
+                <li><a href="./pages/botones.html" class="nav__link">Botones</a></li>
+                <li><a href="./pages/parrafos.html" class="nav__link">Parrafos</a></li>
+                <li><a href="./pages/listados.html" class="nav__link">Listados</a></li>
+            </ul>
+
+        </nav>
+
+        <!--CONTENIDO PRINCIPAL-->
+        <section class="muestrario">
+            <!-- H1 para SEO y accesibilidad (visualmente oculto) -->
+            <h1 class="sr-only">muestrario</h1>
+            <!-- Botones , estilos en extends.scss-->
+            <div class="botones">
+                <button class="boton1">Boton 1</button>
+                <button class="boton2">Boton 2</button>
+                <button class="boton3">Boton 3</button>
+                <button class="boton4">Boton 4</button>
+            </div>
+
+            <!-- Parrafos , estilos en extends.scss-->
+            <div class="parrafos">
+                <p>Parrafo 1</p>
+                <p>Parrafo 2</p>
+                <p>Parrafo 3</p>
+            </div>
+
+            <div class="listados">
+                <ul>
+                    <li>Lista 1</li>
+                    <li>Lista 2</li>
+                    <li>Lista 3</li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <!--FOOTER medios de pago y enlace con instagram-->
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>&copy;2025 Muestrario. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-section payment-methods">
+                    <h3>Métodos de pago: Mercado Pago y Transferencia</h3>
+                </div>
+
+            </div>
+    </footer>
+
+    <script src="./assets/js/menu.js"></script>
+
+</body>
+
+</html>
