@@ -23,10 +23,13 @@
         <!--BARRA MENU PRINCIPAL-->
         <nav class="barra-navegacion">
             <div class="nav-logo">
+                <!-- H1 para SEO y accesibilidad (visualmente oculto) -->
+                <h1 class="sr-only">muestrario</h1>
                 <a href="./index.html">
                     <img src="./frontend/assets/img/Logo.png" alt="Logo">
                 </a>
             </div>
+            <h2>Muestras de estilos</h2>
 
             <!-- Botón hamburguesa para móvil -->
             <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -35,22 +38,13 @@
                 <span class="hamburger__line"></span>
             </button>
 
-            <!--Enlaces del menu principal-->
-            <ul class="nav-links">
-                <li><a href="./index.html" class="nav__link">Home</a></li>
-                <li><a href="./pages/botones.html" class="nav__link">Botones</a></li>
-                <li><a href="./pages/parrafos.html" class="nav__link">Parrafos</a></li>
-                <li><a href="./pages/listados.html" class="nav__link">Listados</a></li>
-            </ul>
-
         </nav>
 
         <!--CONTENIDO PRINCIPAL-->
         <section class="muestrario">
-            <!-- H1 para SEO y accesibilidad (visualmente oculto) -->
-            <h1 class="sr-only">muestrario</h1>
             <!-- Botones , estilos en extends.scss-->
             <div class="botones">
+                <h2>Botones</h2>
                 <button class="boton1">Boton 1</button>
                 <button class="boton2">Boton 2</button>
                 <button class="boton3">Boton 3</button>
@@ -59,15 +53,27 @@
 
             <!-- Parrafos , estilos en extends.scss-->
             <div class="parrafos">
-                <p>Parrafo 1</p>
-                <p>Parrafo 2</p>
-                <p>Parrafo 3</p>
+                <h2>Parrafos</h2>
+                <p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p class="parrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
             </div>
-
+            <!-- Listados , estilos en extends.scss-->
             <div class="listados">
-                <ul>
+                <h2>Listados</h2>
+                <ul class="listado1">
                     <li>Lista 1</li>
+                    <li>Lista 1</li>
+                    <li>Lista 1</li>
+                </ul>
+                <ul class="listado2">
                     <li>Lista 2</li>
+                    <li>Lista 2</li>
+                    <li>Lista 2</li>
+                </ul>
+                <ul class="listado3">
+                    <li>Lista 3</li>
+                    <li>Lista 3</li>
                     <li>Lista 3</li>
                 </ul>
             </div>

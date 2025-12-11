@@ -1,18 +1,268 @@
-/* Error: Undefined variable.
- *    ,
- * 12 |     font-family: $font-primary;
- *    |                  ^^^^^^^^^^^^^
- *    '
- *   frontend\scss\bases\_generales.scss 12:18  @use
- *   frontend\scss\style.scss 4:1               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 12 \2502      font-family: $font-primary;\d\a    \2502                   ^^^^^^^^^^^^^\a    \2575 \a   frontend\\scss\\bases\\_generales.scss 12:18  @use\a   frontend\\scss\\style.scss 4:1               root stylesheet";
+.boton1 {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #cbdf73 0%, #428433 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  display: inline-block;
 }
+.boton1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+.boton1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(66, 132, 51, 0.4);
+}
+.boton1:hover::before {
+  left: 100%;
+}
+.boton1:active {
+  transform: translateY(0);
+}
+.boton1:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.boton2 {
+  width: 100%;
+  padding: 1rem;
+  background: #cbdf73;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+.boton2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(66, 132, 51, 0.4);
+}
+.boton2:hover::before {
+  left: 100%;
+}
+.boton2:active {
+  transform: translateY(0);
+}
+.boton2:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.boton3 {
+  width: 100%;
+  padding: 1rem;
+  background: #4d6842;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+.boton3:hover {
+  transform: translateY(-2px);
+  background-color: #1c97da;
+  box-shadow: 0 10px 25px rgba(10, 9, 9, 0.2);
+}
+
+.boton4 {
+  width: 100%;
+  padding: 1rem;
+  background: #428433;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+.boton4:hover {
+  background-color: #1c97da;
+}
+
+.parrafo3, .parrafo2, .parrafo1 {
+  font-family: "Nunito", sans-serif;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #0a0909;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: auto;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+}
+
+.parrafo1 {
+  background-color: #4d6842;
+}
+.parrafo1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(66, 132, 51, 0.4);
+}
+.parrafo1:hover::before {
+  left: 100%;
+}
+
+.parrafo2 {
+  background-color: #cbdf73;
+  border: 1px solid #4d6842;
+}
+
+.parrafo3 {
+  background: linear-gradient(135deg, #428433 10%, #f7f3c9 90%);
+  border: 1px solid #4d6842;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #f7f3c9;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  color: #0a0909;
+  line-height: 1.6;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f7f3c9;
+  position: relative;
+}
+.barra-navegacion .nav-logo img {
+  width: 100px;
+}
+.barra-navegacion h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Nunito", sans-serif;
+  color: #0a0909;
+  margin: 0;
+  white-space: nowrap;
+}
+.barra-navegacion .nav-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+.barra-navegacion .nav-links a {
+  color: #0a0909;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.botones h2 {
+  width: 100%;
+  text-align: center;
+}
+.botones button {
+  width: auto;
+}
+
+.parrafos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.parrafos h2 {
+  width: 100%;
+  text-align: center;
+}
+.parrafos p {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.listados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.listados h2 {
+  width: 100%;
+  text-align: center;
+}
+.listados ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -5,4 +5,56 @@
     justify-content: center;
     align-items: center;
     gap: $spacing-base;
+    flex-wrap: wrap; // Permitir que los elementos bajen
+    padding: 20px;
+
+    h2 {
+        width: 100%; // Ocupa todo el ancho
+        text-align: center; // Centra el texto
+    }
+
+    button {
+        width: auto; // Sobrescribir el ancho del 100% de _extends.scss
+    }
+}
+
+.parrafos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-base;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    p {
+        flex: 1; // Para que ocupen el mismo espacio
+        min-width: 200px; // Evitar que sean muy pequeños
+        max-width: 300px; // Evitar que sean muy anchos y se apilen
+    }
+}
+
+.listados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-base;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    ul {
+        display: flex; // Para que los li se pongan al lado
+        gap: $spacing-base;
+        list-style: none;
+        padding: 0;
+    }
 }

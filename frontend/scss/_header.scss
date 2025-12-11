@@ -6,6 +6,7 @@
     align-items: center;
     padding: $spacing-base;
     background-color: $color-background;
+    position: relative; // Para posicionar el h2 absolutamente
 
     .nav-logo {
         img {
@@ -13,12 +14,26 @@
         }
     }
 
+    h2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: $font-primary; // Asegurar tipografía
+        color: $color-text;
+        margin: 0;
+        white-space: nowrap; // Evitar saltos de línea indeseados
+    }
+
     .nav-links {
         display: flex;
         gap: $spacing-base;
         list-style: none;
-        color: $color-text;
-        font-size: $font-size-base;
-        font-family: $font-primary;
+
+        a {
+            color: $color-text;
+            font-size: $font-size-lg;
+            font-family: $font-primary;
+            text-decoration: none;
+        }
     }
 }
