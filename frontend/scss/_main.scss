@@ -128,16 +128,51 @@
 //============================
 
 .listado1 {
-    @extend %listado-base;
+    @extend %listado-item-base;
+    // Agregar estilos especificos aqui
+    background-image: linear-gradient(to bottom, $color-primary, $color-tertiary);
+    border-left: 5px solid $color-text;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
+    &:hover {
+        transform: scale(1.05);
+        z-index: 2;
+    }
 }
 
 .listado2 {
-    @extend %listado-base;
+    @extend %listado-item-base;
+    // Agregar estilos especificos aqui
+    background-color: $color-secondary;
+    transition: 2s ease-in-out;
+    border: 0.25em dotted;
 
+    &:hover {
+        rotate: 1 2 1 360deg;
+    }
 }
 
 .listado3 {
-    @extend %listado-base;
+    @extend %listado-item-base;
+    // Agregar estilos especificos aqui
+    background-image: radial-gradient($color-primary, $color-tertiary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-style: outset;
 
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(101, 100, 100) 0.7;
+    }
+}
+
+.listado4 {
+    @extend %listado-item-base;
+    // Agregar estilos especificos aqui
+    background-image: radial-gradient($color-primary, white);
+    writing-mode: horizontal-tb;
+    border-top: 7px solid $color-tertiary;
+    border-left: 7px solid $color-tertiary;
+    border-right: 7px solid $color-tertiary;
+    border-bottom: 7px dotted $color-tertiary;
 }

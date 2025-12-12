@@ -9,8 +9,21 @@
     position: relative; // Para posicionar el h2 absolutamente
 
     .nav-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none; // in case the link affects it
+
         img {
             width: 100px;
+        }
+
+        .logo-text {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: $color-text;
+            margin-top: 5px;
+            font-family: 'Indie Flower', cursive;
         }
     }
 

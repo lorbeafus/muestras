@@ -21,6 +21,13 @@ body {
     line-height: 1.6;
 }
 
+header {
+    background-color: $color-primary;
+    color: $color-text;
+    padding: $spacing-lg;
+    text-align: center;
+}
+
 
 // Clase para elementos visualmente ocultos pero accesibles
 // (Screen Reader Only - para lectores de pantalla y SEO)
@@ -34,4 +41,39 @@ body {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+// Listas
+.listados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $spacing-lg;
+    padding: $spacing-lg;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    // Estilos generales para los spans dentro de los li
+    li span {
+        display: block;
+        position: relative;
+        padding-left: 20px; // Espacio reducido para la viñeta
+
+        // Viñeta personalizada con ::before
+        &::before {
+            content: "•"; // Viñeta
+            position: absolute;
+            left: 0;
+            color: $color-primary;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+}
+
+// Footer
+footer {
+    background-color: $color-primary;
+    color: $color-text;
+    padding: $spacing-lg;
+    text-align: center;
 }
