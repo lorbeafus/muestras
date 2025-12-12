@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Meta etiquetas-->
-
+    <!--Enlace AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Enlace iconos font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!--Enlace Google Fonts - Nunito-->
@@ -39,7 +39,8 @@
             </button>
 
         </nav>
-
+    </header>
+    <main>
         <!--CONTENIDO PRINCIPAL-->
         <section class="muestrario">
             <!-- Botones , estilos en extends.scss-->
@@ -55,8 +56,10 @@
             <div class="parrafos">
                 <h2>Parrafos</h2>
                 <p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                <p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                <p class="parrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p class="parrafo2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p class="parrafo3" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod.</p>
             </div>
             <!-- Listados , estilos en extends.scss-->
             <div class="listados">
@@ -76,9 +79,10 @@
                     <li>Lista 3</li>
                     <li>Lista 3</li>
                 </ul>
+
             </div>
         </section>
-    </header>
+    </main>
 
     <!--FOOTER medios de pago y enlace con instagram-->
     <footer>
@@ -94,9 +98,12 @@
 
             </div>
     </footer>
-
+    <!--Scripts-->
     <script src="./assets/js/menu.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

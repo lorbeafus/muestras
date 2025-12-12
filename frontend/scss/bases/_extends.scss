@@ -1,5 +1,4 @@
 //Extends
-
 @use 'variables' as *;
 
 
@@ -7,11 +6,9 @@
 // Botones
 //============================
 
-// Botón Moderno (Gradiente)
-.boton1 {
+%boton-base {
     width: 100%;
     padding: 1rem;
-    background: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -23,122 +20,7 @@
     overflow: hidden;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    display: inline-block; // Asegurar comportamiento correcto
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-        transition: left 0.5s ease;
-    }
-
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba($color-secondary, 0.4);
-
-        &::before {
-            left: 100%;
-        }
-    }
-
-    &:active {
-        transform: translateY(0);
-    }
-
-    &:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-        transform: none;
-    }
-}
-
-// Botón sólido
-.boton2 {
-    width: 100%;
-    padding: 1rem;
-    background: $color-primary;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    display: inline-block; // Asegurar comportamiento correcto
-
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba($color-secondary, 0.4);
-
-        &::before {
-            left: 100%;
-        }
-    }
-
-    &:active {
-        transform: translateY(0);
-    }
-
-    &:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-        transform: none;
-    }
-}
-
-// Botón sólido cambio de color al seleccionar
-.boton3 {
-    width: 100%;
-    padding: 1rem;
-    background: $color-tertiary;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    display: inline-block; // Asegurar comportamiento correcto
-
-    &:hover {
-        transform: translateY(-2px);
-        background-color: $color-azul; //cambiar color al seleccionar
-        box-shadow: 0 10px 25px rgba($color-text, 0.2);
-    }
-}
-
-// Botón sólido cambio de color al seleccionar
-.boton4 {
-    width: 100%;
-    padding: 1rem;
-    background: $color-secondary;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    display: inline-block; // Asegurar comportamiento correcto
-
-    &:hover {
-        background-color: $color-azul; //cambiar color al seleccionar
-    }
+    display: inline-block;
 }
 
 
@@ -152,38 +34,28 @@
     border-radius: 10px;
     padding: 1rem;
     color: $color-text;
-    font-size: 1.1rem; // Usando el valor explicito que tenia prioridad
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: auto;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     position: relative;
     overflow: hidden;
     text-align: center;
     display: inline-block;
 }
 
-.parrafo1 {
-    @extend %parrafo-base;
-    background-color: $color-tertiary;
+//============================
+// Listados
+//============================
 
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba($color-secondary, 0.4);
-
-        &::before {
-            left: 100%;
-        }
-    }
-}
-
-.parrafo2 {
-    @extend %parrafo-base;
-    background-color: $color-primary;
-    border: 1px solid $color-tertiary;
-}
-
-.parrafo3 {
-    @extend %parrafo-base;
-    background: linear-gradient(135deg, $color-secondary 10%, $color-background 90%);
-    border: 1px solid $color-tertiary;
+%listado-base {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: auto;
+    text-align: center;
+    display: inline-flex;
 }
