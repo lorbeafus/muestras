@@ -17,21 +17,13 @@
         img {
             width: 100px;
         }
-
-        .logo-text {
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: $color-text;
-            margin-top: 5px;
-            font-family: 'Indie Flower', cursive;
-        }
     }
 
     h2 {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        font-family: $font-primary; // Asegurar tipografía
+        font-family: $font-secondary; // Asegurar tipografía
         color: $color-text;
         margin: 0;
         white-space: nowrap; // Evitar saltos de línea indeseados

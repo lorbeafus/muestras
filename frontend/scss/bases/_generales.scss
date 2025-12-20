@@ -21,6 +21,10 @@ body {
     line-height: 1.6;
 }
 
+h2 {
+    font-family: $font-secondary;
+}
+
 header {
     background-color: $color-primary;
     color: $color-text;
